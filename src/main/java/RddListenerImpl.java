@@ -1,6 +1,10 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class RddListenerImpl extends RddBaseListener {
 
     private StartCtxTransformer transformer;
+    private Map<String,String> idMap = new HashMap<>();
     public String outPut(){
         if (transformer == null) return "not parsed!";
         return transformer.transform();
@@ -11,6 +15,7 @@ public class RddListenerImpl extends RddBaseListener {
         transformer = new StartCtxTransformer(ctx);
     }
 
+    //start
     class StartCtxTransformer{
         private RddParser.StartContext ctx;
         StartCtxTransformer(RddParser.StartContext ctx){
@@ -28,6 +33,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //mapops
     class MapopsCtxTransformer{
         private RddParser.MapopsContext ctx;
         private String mapOpsParam = "";
@@ -47,6 +53,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //udf
     class UdfCtxTranformer{
         private RddParser.UdfContext ctx;
         private String udfParam;
@@ -63,6 +70,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //expression
     class ExprCtxTransformer{
         private RddParser.ExpressionContext ctx;
         private String exprParam;
@@ -81,6 +89,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //simpleexpression
     class SimpleExprCtxTransformer{
         private RddParser.SimpleexpressionContext ctx;
         private String simpleExprParam;
@@ -92,13 +101,14 @@ public class RddListenerImpl extends RddBaseListener {
         String transform() {
             if(ctx.pureexpression() == null){
                 TupleExprCtxTransformer tupleExprCtxTransformer = new TupleExprCtxTransformer(ctx.tupleexpression(), simpleExprParam);
-                return String.format("\"%s as _1\"", tupleExprCtxTransformer.transform());
+                return String.format("%s", tupleExprCtxTransformer.transform());
             }
             PureExprCtxTransformer pureExprCtxTransformer = new PureExprCtxTransformer(ctx.pureexpression(), simpleExprParam);
             return String.format("\"%s as _1\"", pureExprCtxTransformer.transfrom());
         }
     }
 
+    //tupleexpression
     class TupleExprCtxTransformer{
         private RddParser.TupleexpressionContext ctx;
         private String tupleExprParam;
@@ -112,16 +122,18 @@ public class RddListenerImpl extends RddBaseListener {
             if(ctx.tupleexpression() == null){
                 PureExprCtxTransformer pureExprCtxTransformer1 = new PureExprCtxTransformer(ctx.pureexpression(0),tupleExprParam);
                 PureExprCtxTransformer pureExprCtxTransformer2 = new PureExprCtxTransformer(ctx.pureexpression(1),tupleExprParam);
-                return String.format("%s as _%d, %s as _%d", pureExprCtxTransformer1.transfrom(), asId++, pureExprCtxTransformer2.transfrom(), asId++);
+                return String.format("\"%s as _%d\", \"%s as _%d\"", pureExprCtxTransformer1.transfrom(), asId++, pureExprCtxTransformer2.transfrom(), asId++);
             }
 
             TupleExprCtxTransformer tupleExprCtxTransformer = new TupleExprCtxTransformer(ctx.tupleexpression(), tupleExprParam);
             PureExprCtxTransformer pureExprCtxTransformer = new PureExprCtxTransformer(ctx.pureexpression(0), tupleExprParam);
 
-            return String.format("%s, %s as _%d", tupleExprCtxTransformer.transform(), pureExprCtxTransformer.transfrom(), asId++);
+            //return String.format("%s, %s as _%d", tupleExprCtxTransformer.transform(), pureExprCtxTransformer.transfrom(), asId++);
+            return String.format("%s, %s as _%d", tupleExprCtxTransformer.transform(), pureExprCtxTransformer.transfrom(), 100);
         }
     }
 
+    //complexexpression
     class ComplexExprCtxTransformer{
         private RddParser.ComplexexpressionContext ctx;
         private String complexExprParam;
@@ -140,6 +152,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //pureexpression
     class PureExprCtxTransformer{
         private RddParser.PureexpressionContext ctx;
         private String pureExprParam;
@@ -153,7 +166,7 @@ public class RddListenerImpl extends RddBaseListener {
                 CompExprCtxTranformer compExprCtxTranformer = new CompExprCtxTranformer(ctx.comparisonexpression(), pureExprParam);
                 PureExprCtxTransformer pureExprCtxTransformer = new PureExprCtxTransformer(ctx.pureexpression(0), pureExprParam);
                 PureExprCtxTransformer pureExprCtxTransformer1 = new PureExprCtxTransformer(ctx.pureexpression(1), pureExprParam);
-                return String.format("if(%s) %s else %s", compExprCtxTranformer.transform(), pureExprCtxTransformer.transfrom(), pureExprCtxTransformer1.transfrom());
+                return String.format("if(%s,%s,%s)", compExprCtxTranformer.transform(), pureExprCtxTransformer.transfrom(), pureExprCtxTransformer1.transfrom());
             }
             //NUMBER
             if(ctx.NUMBER() != null){
@@ -190,6 +203,7 @@ public class RddListenerImpl extends RddBaseListener {
         }
     }
 
+    //comparisonexpression
     class CompExprCtxTranformer{
         private RddParser.ComparisonexpressionContext ctx;
         private String CompExprParam;

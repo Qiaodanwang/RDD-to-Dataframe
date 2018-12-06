@@ -26,9 +26,8 @@ public class Main {
                 "  .map(i=>{val j=i%3;(i, if(j==0)i*10 else i*2)})\n" +
                 "  .map(r=>r._1+r._2)\n" +
                 "  .collect()\n";
-        String test3 = "sc.range(10,100).map(r=>r1+r2).collect()";
-        run(test2);
 
-        //run(test3);
+        run(test1);
+        run(test2);
     }
 }
