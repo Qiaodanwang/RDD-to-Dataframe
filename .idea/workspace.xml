@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bedc0d4f-39df-49b7-b9c3-9b6a690bfb55" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Transform.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Assignment_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Assignment_expressionsContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Comparison_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Complex_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$ExpressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$MapopsContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$ProgramContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Pure_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Range_callContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Simple_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$Tuple_expressionContext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sparkParser$User_defined_functionContext.class" afterPath="" />
-    </list>
+    <list default="true" id="bedc0d4f-39df-49b7-b9c3-9b6a690bfb55" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +42,8 @@
           <file leaf-file-name="Transform.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Transform.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -215,7 +198,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
                   <first_editor relative-caret-position="15">
-                    <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                    <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -719,12 +702,12 @@
       <workItem from="1543964400409" duration="49000" />
       <workItem from="1543964481278" duration="6311000" />
       <workItem from="1543983739434" duration="8633000" />
-      <workItem from="1544026592269" duration="17381000" />
+      <workItem from="1544026592269" duration="17520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33747000" />
+    <option name="totallyTimeSpent" value="33886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1058" y="0" width="1502" height="1080" extended-state="0" />
@@ -740,7 +723,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291262" sideWeight="0.5406125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291262" sideWeight="0.45938748" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291262" sideWeight="0.45938748" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1180,7 +1163,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1197,8 +1180,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Transform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
