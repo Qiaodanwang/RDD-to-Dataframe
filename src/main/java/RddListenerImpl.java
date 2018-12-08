@@ -161,7 +161,11 @@ public class RddListenerImpl extends RddBaseListener {
                 AssignExprCtxTransformer assignExprCtxTransformer = new AssignExprCtxTransformer(ctx.assignmentexpression(), nextCol);
                 return assignExprCtxTransformer.transform();
             }
-            return "";
+            //return "";
+            //assignmentexpressions->assignmentexpressions ; assignmentexpression
+            AssignExprsCtxTransformer assignExprsCtxTransformer = new AssignExprsCtxTransformer(ctx.assignmentexpressions(),nextCol);
+            AssignExprCtxTransformer assignExprCtxTransformer = new AssignExprCtxTransformer(ctx.assignmentexpression(),nextCol);
+            return assignExprsCtxTransformer.transform()+assignExprCtxTransformer.transform();
         }
     }
 
@@ -174,10 +178,10 @@ public class RddListenerImpl extends RddBaseListener {
         }
         String transform() {
             idMap.put(ctx.ID().getText(),ctx.pureexpression().getText().substring(1));
-            //test
-            System.out.println(ctx.ID().getText());
-            //test
-            System.out.println(ctx.pureexpression().getText().substring(1));
+//            //test
+//            System.out.println(ctx.ID().getText());
+//            //test
+//            System.out.println(ctx.pureexpression().getText().substring(1));
             return "\"_1 as _"+nextCol+"\"";
         }
     }

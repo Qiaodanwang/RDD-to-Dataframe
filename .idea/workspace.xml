@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bedc0d4f-39df-49b7-b9c3-9b6a690bfb55" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Rdd.g4" afterPath="$PROJECT_DIR$/src/main/java/Rdd.g4" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Rdd.tokens" afterPath="$PROJECT_DIR$/src/main/java/Rdd.tokens" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RddLexer.java" afterPath="$PROJECT_DIR$/src/main/java/RddLexer.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RddLexer.tokens" afterPath="$PROJECT_DIR$/src/main/java/RddLexer.tokens" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RddParser.java" afterPath="$PROJECT_DIR$/src/main/java/RddParser.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RddListenerImpl$AssignExprCtxTransformer.class" afterPath="$PROJECT_DIR$/target/classes/RddListenerImpl$AssignExprCtxTransformer.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RddListenerImpl$AssignExprsCtxTransformer.class" afterPath="$PROJECT_DIR$/target/classes/RddListenerImpl$AssignExprsCtxTransformer.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RddListenerImpl$CompExprCtxTranformer.class" afterPath="$PROJECT_DIR$/target/classes/RddListenerImpl$CompExprCtxTranformer.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RddListenerImpl$PureExprCtxTransformer.class" afterPath="$PROJECT_DIR$/target/classes/RddListenerImpl$PureExprCtxTransformer.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +37,7 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
+                <state relative-caret-position="345">
                   <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -43,8 +49,8 @@
           <file leaf-file-name="RddListenerImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/RddListenerImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1693">
-                  <caret line="57" column="49" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+                <state relative-caret-position="141">
+                  <caret line="181" column="22" lean-forward="true" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#404#405#0" expanded="true" />
@@ -69,8 +75,8 @@
           <file leaf-file-name="Rdd.g4" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
                   <folding />
                 </state>
               </provider>
@@ -89,8 +95,8 @@
           <file leaf-file-name="RddLexer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/RddLexer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+                <state relative-caret-position="372">
+                  <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -120,6 +126,7 @@
       <find>as _1</find>
       <find>&quot;1&quot;</find>
       <find>tuple</find>
+      <find>assign</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/main/java/spark.g4" />
         <option value="$PROJECT_DIR$/src/main/java/Transform.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rdd.g4" />
+        <option value="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" />
       </list>
     </option>
   </component>
@@ -550,19 +557,20 @@
       <workItem from="1543964400409" duration="49000" />
       <workItem from="1543964481278" duration="6311000" />
       <workItem from="1543983739434" duration="8633000" />
-      <workItem from="1544026592269" duration="25103000" />
+      <workItem from="1544026592269" duration="25398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41469000" />
+    <option name="totallyTimeSpent" value="41764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.46071905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -570,7 +578,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39882353" sideWeight="0.54226804" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39882353" sideWeight="0.45773196" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39882353" sideWeight="0.45773196" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -919,14 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RddBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RddParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -988,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RddLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="372">
+          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1002,9 +1002,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RddBaseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="345">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1014,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RddListenerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1693">
-          <caret line="57" column="49" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        <state relative-caret-position="141">
+          <caret line="181" column="22" lean-forward="true" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#404#405#0" expanded="true" />
@@ -1029,14 +1045,6 @@
             <element signature="e#2169#2170#0" expanded="true" />
             <element signature="e#2207#2208#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
