@@ -4,7 +4,6 @@ fragment DIGIT : ('0'..'9');
 fragment LETTER : ('a'..'z') | ('A'..'Z') | '_';
 
 //lexer
-WHITESPACE : ( '\t' | ' ' | '\r' | '\n'| '\u000C' )+ -> skip;
 SC : 'sc';
 VAL : 'val';
 IF : 'if';

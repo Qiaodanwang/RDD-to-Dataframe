@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bedc0d4f-39df-49b7-b9c3-9b6a690bfb55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rdd.g4" afterPath="$PROJECT_DIR$/src/main/java/Rdd.g4" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rdd.tokens" afterPath="$PROJECT_DIR$/src/main/java/Rdd.tokens" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RddLexer.java" afterPath="$PROJECT_DIR$/src/main/java/RddLexer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RddLexer.tokens" afterPath="$PROJECT_DIR$/src/main/java/RddLexer.tokens" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RddParser.java" afterPath="$PROJECT_DIR$/src/main/java/RddParser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,8 +69,8 @@
           <file leaf-file-name="Rdd.g4" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="23" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -85,8 +89,8 @@
           <file leaf-file-name="RddLexer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/RddLexer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="372">
-                  <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+                <state relative-caret-position="357">
+                  <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -146,9 +150,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Tokenizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/spark.g4" />
         <option value="$PROJECT_DIR$/src/main/java/Transform.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rdd.g4" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/RddListenerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rdd.g4" />
       </list>
     </option>
   </component>
@@ -546,16 +550,15 @@
       <workItem from="1543964400409" duration="49000" />
       <workItem from="1543964481278" duration="6311000" />
       <workItem from="1543983739434" duration="8633000" />
-      <workItem from="1544026592269" duration="25022000" />
+      <workItem from="1544026592269" duration="25103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41388000" />
+    <option name="totallyTimeSpent" value="41469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -572,7 +575,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17909454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17847222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46796116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -985,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RddLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -995,14 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1034,6 +1029,14 @@
             <element signature="e#2169#2170#0" expanded="true" />
             <element signature="e#2207#2208#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rdd.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
