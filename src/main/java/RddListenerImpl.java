@@ -36,7 +36,6 @@ public class RddListenerImpl extends RddBaseListener {
     //mapops
     class MapopsCtxTransformer{
         private RddParser.MapopsContext ctx;
-        private String mapOpsParam = "";
         MapopsCtxTransformer(RddParser.MapopsContext ctx){
             this.ctx = ctx;
         }
@@ -47,7 +46,7 @@ public class RddListenerImpl extends RddBaseListener {
                 return "";
             }
             MapopsCtxTransformer mapopsCtxTransformer = new MapopsCtxTransformer(ctx.mapops());
-            UdfCtxTranformer udfCtxTranformer = new UdfCtxTranformer(ctx.udf(),mapOpsParam);
+            UdfCtxTranformer udfCtxTranformer = new UdfCtxTranformer(ctx.udf());
 
             return mapopsCtxTransformer.transform() + String.format(".selectExpr(%s)",udfCtxTranformer.transform());
         }
@@ -56,15 +55,12 @@ public class RddListenerImpl extends RddBaseListener {
     //udf
     class UdfCtxTranformer{
         private RddParser.UdfContext ctx;
-        private String udfParam;
-        UdfCtxTranformer(RddParser.UdfContext ctx, String param){
+        UdfCtxTranformer(RddParser.UdfContext ctx){
             this.ctx = ctx;
-            this.udfParam = param;
         }
 
         String transform() {
-            udfParam = ctx.ID().getText();
-            ExprCtxTransformer exprCtxTransformer = new ExprCtxTransformer(ctx.expression(),udfParam);
+            ExprCtxTransformer exprCtxTransformer = new ExprCtxTransformer(ctx.expression());
             return exprCtxTransformer.transform();
 
         }
@@ -73,10 +69,8 @@ public class RddListenerImpl extends RddBaseListener {
     //expression
     class ExprCtxTransformer{
         private RddParser.ExpressionContext ctx;
-        private String exprParam;
-        ExprCtxTransformer(RddParser.ExpressionContext ctx, String param){
+        ExprCtxTransformer(RddParser.ExpressionContext ctx){
             this.ctx = ctx;
-            this.exprParam = param;
         }
 
         String transform() {
